@@ -1,0 +1,32 @@
+.platform_currency--input {
+  height: 40px;
+  width: 160px;
+  margin-right: 20px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.platform_currency--input:focus-visible {
+  outline: none;
+  border-color: rgb(81, 211, 30);
+}
+
+.platform_currency--select {
+  height: 42px;
+  width: 100px;
+  padding-left: 10px;
+  font-size: 25px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.platform_currency--select:focus-visible {
+  outline: none;
+  border-color: rgb(81, 211, 30);
+}
+.platform_currency--select__option {
+  font-size: 20px;
+}
