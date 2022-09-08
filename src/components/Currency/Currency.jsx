@@ -1,4 +1,5 @@
 import './Currency.css';
+import PropTypes from 'prop-types';
 import { v4 as uuidv4 } from 'uuid';
 
 export const Currency = props => {
@@ -30,4 +31,11 @@ export const Currency = props => {
       </select>
     </div>
   );
+};
+Currency.propTypes = {
+  inputValue: PropTypes.number.isRequired,
+  selectValue: PropTypes.string.isRequired,
+  changeInput: PropTypes.func,
+  selectChange: PropTypes.func,
+  currencyKeys: PropTypes.array,
 };

@@ -1,7 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
-import fixerApiData from '../data/fixerApiData.json';
-// import axios from 'axios';
+// import fixerApiData from '../data/fixerApiData.json';
+import axios from 'axios';
 import { Header } from './Header/Header';
 import { Currency } from './Currency/Currency';
 
@@ -12,18 +12,12 @@ export const App = () => {
   const [currencyTwo, setCurrencyTwo] = useState('USD');
   const [rates, setRates] = useState([]);
 
-  // useEffect(() => {
-  //   axios
-  //     .get(
-  //       'https://api.apilayer.com/fixer/latest?symbols=USD%2CEUR%2CRUB%2CBYN%2CGBP%2CPLN%2CUAH&base=UAH&apikey=gpUpYLM9pOIPka8iVbUCbLNy1utDkk6i'
-  //     )
-  //     .then(response =>
-  //       console.log('        Retun axios from useEffect in App', response.data)
-  //     );
-  // }, []);
-
   useEffect(() => {
-    setRates(fixerApiData.rates);
+    axios
+      .get(
+        'https://api.apilayer.com/fixer/latest?symbols=USD%2CEUR%2CRUB%2CBYN%2CGBP%2CPLN%2CUAH&base=UAH&apikey=gpUpYLM9pOIPka8iVbUCbLNy1utDkk6i'
+      )
+      .then(response => setRates(response.data.rates));
   }, []);
 
   function roundNum(n) {
