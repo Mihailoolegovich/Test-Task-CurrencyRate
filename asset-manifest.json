@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Test-Task-CurrencyRate/static/css/main.00c52e5a.css",
-    "main.js": "/Test-Task-CurrencyRate/static/js/main.159af827.js",
+    "main.css": "/Test-Task-CurrencyRate/static/css/main.273b0055.css",
+    "main.js": "/Test-Task-CurrencyRate/static/js/main.c9ff52f8.js",
     "index.html": "/Test-Task-CurrencyRate/index.html",
-    "main.00c52e5a.css.map": "/Test-Task-CurrencyRate/static/css/main.00c52e5a.css.map",
-    "main.159af827.js.map": "/Test-Task-CurrencyRate/static/js/main.159af827.js.map"
+    "main.273b0055.css.map": "/Test-Task-CurrencyRate/static/css/main.273b0055.css.map",
+    "main.c9ff52f8.js.map": "/Test-Task-CurrencyRate/static/js/main.c9ff52f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.00c52e5a.css",
-    "static/js/main.159af827.js"
+    "static/css/main.273b0055.css",
+    "static/js/main.c9ff52f8.js"
   ]
 }
